@@ -12,7 +12,7 @@ import time
 
 largura = 800
 altura = 600
-frames = 120
+
 cor_branca = (255, 255, 255)
 cor_pincel = (80, 11, 200)
 
@@ -48,10 +48,8 @@ def main(frames):
         pygame.display.update()
     pygame.image.save(tela, 'tela.jpeg')
     pygame.quit()
-    # img = cv2.imread('tela.jpeg')
-    # res = cv2.resize(img, dsize=(30, 30), interpolation=cv2.INTER_CUBIC)
-    # cv2.imwrite('imagem.jpeg',res)
 
 
 if __name__ == '__main__':
+    frames = 120
     main(frames)
